@@ -1,0 +1,11 @@
+--2025-05-20 16:10:42--  https://huggingface.co/datasets/TingchenFu/MathIF/resolve/main/minerva_single.jsonl
+正在解析主机 huggingface.co (huggingface.co)... 54.230.71.2, 54.230.71.103, 54.230.71.28, ...
+正在连接 huggingface.co (huggingface.co)|54.230.71.2|:443... 已连接。
+已发出 HTTP 请求，正在等待回应... 200 OK
+长度：23996 (23K) [text/plain]
+正在保存至: “minerva_single.jsonl”
+
+     0K .......... .......... ...                             100% 48.5M=0s
+
+2025-05-20 16:10:43 (48.5 MB/s) - 已保存 “minerva_single.jsonl” [23996/23996])
+

@@ -1,0 +1,11 @@
+--2025-05-20 16:10:39--  https://huggingface.co/datasets/TingchenFu/MathIF/resolve/main/gsm8k_double.jsonl
+正在解析主机 huggingface.co (huggingface.co)... 54.230.71.103, 54.230.71.28, 54.230.71.56, ...
+正在连接 huggingface.co (huggingface.co)|54.230.71.103|:443... 已连接。
+已发出 HTTP 请求，正在等待回应... 200 OK
+长度：25342 (25K) [text/plain]
+正在保存至: “gsm8k_double.jsonl”
+
+     0K .......... .......... ....                            100% 47.9M=0.001s
+
+2025-05-20 16:10:40 (47.9 MB/s) - 已保存 “gsm8k_double.jsonl” [25342/25342])
+

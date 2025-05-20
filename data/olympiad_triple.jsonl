@@ -1,0 +1,11 @@
+--2025-05-20 16:10:45--  https://huggingface.co/datasets/TingchenFu/MathIF/resolve/main/olympiad_triple.jsonl
+正在解析主机 huggingface.co (huggingface.co)... 54.230.71.2, 54.230.71.103, 54.230.71.28, ...
+正在连接 huggingface.co (huggingface.co)|54.230.71.2|:443... 已连接。
+已发出 HTTP 请求，正在等待回应... 200 OK
+长度：27840 (27K) [text/plain]
+正在保存至: “olympiad_triple.jsonl”
+
+     0K .......... .......... .......                         100% 1.16M=0.02s
+
+2025-05-20 16:10:46 (1.16 MB/s) - 已保存 “olympiad_triple.jsonl” [27840/27840])
+

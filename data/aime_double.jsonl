@@ -1,0 +1,11 @@
+--2025-05-20 16:10:46--  https://huggingface.co/datasets/TingchenFu/MathIF/resolve/main/aime_double.jsonl
+正在解析主机 huggingface.co (huggingface.co)... 54.230.71.2, 54.230.71.103, 54.230.71.28, ...
+正在连接 huggingface.co (huggingface.co)|54.230.71.2|:443... 已连接。
+已发出 HTTP 请求，正在等待回应... 200 OK
+长度：17630 (17K) [text/plain]
+正在保存至: “aime_double.jsonl”
+
+     0K .......... .......                                    100%  118M=0s
+
+2025-05-20 16:10:46 (118 MB/s) - 已保存 “aime_double.jsonl” [17630/17630])
+

@@ -1,0 +1,11 @@
+--2025-05-20 16:10:43--  https://huggingface.co/datasets/TingchenFu/MathIF/resolve/main/minerva_double.jsonl
+正在解析主机 huggingface.co (huggingface.co)... 54.230.71.2, 54.230.71.103, 54.230.71.28, ...
+正在连接 huggingface.co (huggingface.co)|54.230.71.2|:443... 已连接。
+已发出 HTTP 请求，正在等待回应... 200 OK
+长度：27121 (26K) [text/plain]
+正在保存至: “minerva_double.jsonl”
+
+     0K .......... .......... ......                          100% 26.6M=0.001s
+
+2025-05-20 16:10:44 (26.6 MB/s) - 已保存 “minerva_double.jsonl” [27121/27121])
+
