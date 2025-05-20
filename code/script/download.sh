@@ -1,3 +1,4 @@
+mkdir -p ./data
 for source in gsm8k math500 minerva olympiad aime
 do
     for constraint in single double triple
