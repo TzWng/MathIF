@@ -25,7 +25,7 @@ MathIF is a dedicated benchmark for evaluating the instruction-following capabil
 </div>
 
 
-# 📖 Features
+# 📖Features
 
 - **Compositional Constraints**  
   15 Python-verifiable constraint types in four categories (length, lexical, format, affix), combined into single, dual, and triple constraints.
@@ -40,7 +40,7 @@ MathIF is a dedicated benchmark for evaluating the instruction-following capabil
 - **vLLM-Powered Inference**  
   Efficient decoding with nucleus sampling (T=1.0, p=0.95) and up to 16k token generation.
 
-# ✨ Getting Started
+# ✨Getting Started
 
 ## Prerequisites
 
@@ -73,7 +73,7 @@ pip install -r requirements.txt
   bash code/scripts/download.sh
   ```
 
-# 🔧 Usage
+# 🔧Usage
 
 ## Inference
 
@@ -134,11 +134,11 @@ Released under the MIT License. See [LICENSE](LICENSE) for details.
 ```
 ``` -->
 
-# 🌻 Acknowledgements
+# 🌻Acknowledgements
 
 MathIF is inspired by prior work on [IFEval](https://huggingface.co/datasets/google/IFEval) and [ComplexBench](https://github.com/thu-coai/ComplexBench), and leverages [vLLM](https://github.com/vllm-project/vllm) for efficient inference.
 
-# 📬 Contact
+# 📬Contact
 
 For questions, feedback, or collaboration inquiries, please contact:  
 - **Yafu Li** · yafuly@gmail.com
