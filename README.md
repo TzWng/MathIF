@@ -141,4 +141,5 @@ MathIF is inspired by prior work on [IFEval](https://huggingface.co/datasets/goo
 # 📬Contact
 
 For questions, feedback, or collaboration inquiries, please contact:  
-- **Yafu Li** · yafuly@gmail.com
+- **Tingchen Fu**: lucas.futingchen@gmail.com
+- **Yafu Li**: yafuly@gmail.com
