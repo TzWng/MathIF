@@ -17,7 +17,12 @@ pip install -r requirements.txt
 
 ### 2. Data Download
 
-The dataset can be downloaded from Hugging Face: https://huggingface.co/datasets/TingchenFu/MathIF and should be put in data/ directory.
+The dataset can be manually downloaded from Hugging Face: https://huggingface.co/datasets/TingchenFu/MathIF and put in data/ directory. Alternatively, you can use the following script to download the dataset: 
+
+```
+bash code/scripts/download.sh
+```
+
 
 ## Usage
 
