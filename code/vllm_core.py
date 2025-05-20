@@ -70,7 +70,7 @@ output_path = output_path.replace(".jsonl", "_noconstraint.jsonl") if args.no_co
 
 
 output = vllm_inference(prompt)
-fout = open(output_path,'w')
+fout = open(output_path,'w', encoding='utf8')
 for i in range(len(prompt)):
     fout.write(json.dumps({"output": [ output[i].outputs[j].text for j in range(args.n_sample)]}, ensure_ascii=False)+'\n')
 fout.close()
