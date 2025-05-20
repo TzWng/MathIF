@@ -130,6 +130,8 @@ Here's your LaTeX table transformed into a clean and readable GitHub-flavored Ma
 
 
 # 📊Leaderboard
+📢 **Showcase Your Model’s Instruction-Following Capability**
+
 Feel free to contribute results from your own models—we welcome community submissions!
 We currently support evaluation of newly added models on our platform. To be included on the leaderboard, please provide the Hugging Face model link for verification and testing.
 
