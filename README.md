@@ -51,8 +51,8 @@ MathIF is a dedicated benchmark for evaluating the instruction-following capabil
 ## Installation
 
 ```bash
-git clone https://github.com/TingchenFu/MathIF-v1.git
-cd MathIF-v1
+git clone https://github.com/TingchenFu/MathIF.git
+cd MathIF
 
 # Create and activate virtual environment
 python -m venv venv
