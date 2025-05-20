@@ -18,8 +18,11 @@ MathIF is a dedicated benchmark for evaluating the instruction-following capabil
     <a href="#usage" style="text-decoration: none; font-weight: bold;">🔧 Usage</a>
     <!-- <a href="#evaluation" style="text-decoration: none; font-weight: bold;">📃 Evaluation</a> • -->
     <!-- <a href="#citation" style="text-decoration: none; font-weight: bold;">🎈 Citation</a> • -->
+    <a href="#leaderboard" style="text-decoration: none; font-weight: bold;">📊 Leaderboard</a>
     <a href="#acknowledgement" style="text-decoration: none; font-weight: bold;">🌻 Acknowledgements</a>
     <a href="#contact" style="text-decoration: none; font-weight: bold;">📬 Contact</a>
+    
+    
     <!-- <a href="#star-history" style="text-decoration: none; font-weight: bold;">📈 Star History</a> -->
   </p>
 </div>
@@ -133,6 +136,53 @@ Released under the MIT License. See [LICENSE](LICENSE) for details.
 
 ```
 ``` -->
+
+Here's your LaTeX table transformed into a clean and readable GitHub-flavored Markdown table, **keeping only HAcc, SAcc, and correctness with constraint** (`w/ const.`). For clarity, the models are grouped by size, but LaTeX-specific formatting (bold/underline) is omitted since GitHub tables do not support rich styling.
+
+
+# 📊Leaderboard
+Feel free to contribute results from your own models—we welcome community submissions!
+We currently support evaluation of newly added models on our platform. To be included on the leaderboard, please provide the Hugging Face model link for verification and testing.
+
+## **≤ 4B Models**              
+
+| Model                         | HAcc  | SAcc  | Correctness |
+| ----------------------------- | ----- | ----- | ----------------------- |
+| [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)                      | 44.05 | 61.43 | 58.57                   |
+| [Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)                    | 30.24 | 50.24 | 51.19                   |
+| [Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)                    | 27.86 | 50.44 | 32.14                   |
+| [L1-Qwen-1.5B-Exact](https://huggingface.co/l3lab/L1-Qwen-1.5B-Exact)            | 19.76 | 39.60 | 42.86                   |
+| [L1-Qwen-1.5B-Max](https://huggingface.co/l3lab/L1-Qwen-1.5B-Max)              | 19.76 | 39.40 | 45.71                   |
+| [DeepSeek-R1-Distill-Qwen-1.5B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B) | 17.14 | 36.62 | 31.67                   |
+| [DeepScaler-1.5B-Preview](https://huggingface.co/agentica-org/DeepScaleR-1.5B-Preview)       | 14.52 | 34.52 | 36.19                   |
+| [Qwen2.5-1.5B-SimpleRL-Zoo](https://huggingface.co/hkust-nlp/Qwen-2.5-1.5B-SimpleRL-Zoo)     | 9.05  | 24.33 | 22.38                   |
+| [Qwen2.5-Math-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct)    | 7.62  | 21.39 | 44.29                   |
+
+## **7B–14B Models**
+| Model                         | HAcc  | SAcc  | Correctness |
+| ----------------------------- | ----- | ----- | ----------------------- |
+| [Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B)                          | 50.71  | 67.06  | 64.29                   |
+| [DeepSeek-R1-Distill-Qwen-14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B)      | 39.28  | 60.55  | 50.95                   |
+| [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)                       | 37.86  | 57.34  | 66.43                   |
+| [DeepSeek-R1-Distill-Qwen-7B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B)       | 26.43  | 44.96  | 48.57                   |
+| [DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)      | 22.14  | 44.04  | 36.43                   |
+| [Open-Reasoner-Zero-7B](https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-7B)             | 13.57  | 32.26  | 51.90                   |
+| [Qwen2.5-Math-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Math-7B-Instruct)          | 9.05   | 25.60  | 37.14                   |
+
+
+## **≥ 32B Models**
+| Model                         | HAcc  | SAcc  | Correctness |
+| ----------------------------- | ----- | ----- | ----------------------- |
+| [Qwen3-32B](https://huggingface.co/Qwen/Qwen3-32B)                          | 43.81  | 62.82  | 70.00                   |
+| [DeepSeek-R1-Distill-Qwen-32B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B)      | 42.62  | 60.91  | 57.62                   |
+| [DeepSeek-R1-Distill-Llama-70B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B)     | 41.43  | 61.07  | 54.05                   |
+| [QwQ-32B](https://huggingface.co/Qwen/QwQ-32B)                            | 40.24  | 59.99  | 68.81                   |
+| [OlympicCoder-32B](https://huggingface.co/open-r1/OlympicCoder-32B)                  | 35.95  | 57.97  | 54.52                   |
+| [s1-32B](https://huggingface.co/simplescaling/s1-32B)                             | 20.95  | 41.78  | 60.95                   |
+| [Open-Reasoner-Zero-32B](https://huggingface.co/Open-Reasoner-Zero/Open-Reasoner-Zero-32B)            | 15.47  | 35.52  | 67.62                   |
+
+
+
 
 # 🌻Acknowledgements
 
