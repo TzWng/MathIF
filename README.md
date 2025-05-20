@@ -22,8 +22,6 @@ MathIF is a dedicated benchmark for evaluating the instruction-following capabil
     <a href="#acknowledgement" style="text-decoration: none; font-weight: bold;">🌻 Acknowledgements</a>
     <a href="#contact" style="text-decoration: none; font-weight: bold;">📬 Contact</a>
     
-    
-    <!-- <a href="#star-history" style="text-decoration: none; font-weight: bold;">📈 Star History</a> -->
   </p>
 </div>
 
