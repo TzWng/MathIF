@@ -65,16 +65,7 @@ source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ````
 
-# ## Downloading the Dataset
 
-# * **Manual**: Download from Hugging Face and place under `data/`
-#   `https://huggingface.co/datasets/TingchenFu/MathIF`
-
-# * **Or run the following script**:
-
-#   ```bash
-#   bash code/scripts/download.sh
-#   ```
 
 # 🔧Usage
 
