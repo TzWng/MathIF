@@ -11,16 +11,16 @@ MathIF is a dedicated benchmark for evaluating the instruction-following capabil
   <p>
     <!-- <a href="#news" style="text-decoration: none; font-weight: bold;">🎉 News</a> • -->
     <!-- <a href="#links" style="text-decoration: none; font-weight: bold;">🔗 Links</a> • -->
-     <a href="https://arxiv.org/abs/2505.14810" style="text-decoration: none; font-weight: bold;">📖 Paper</a> •
-<!--     <a href="#getting-started" style="text-decoration: none; font-weight: bold;">✨ Getting Started</a> -->
+     <a href="https://arxiv.org/abs/2505.14810" style="text-decoration: none; font-weight: bold;">• 📖 Paper</a> •
+<!--     <a href="#getting-started" style="text-decoration: none; font-weight: bold;">• ✨ Getting Started</a> -->
   <!-- </p>
   <p> -->
     <a href="#usage" style="text-decoration: none; font-weight: bold;">🔧 Usage</a>
     <!-- <a href="#evaluation" style="text-decoration: none; font-weight: bold;">📃 Evaluation</a> • -->
     <!-- <a href="#citation" style="text-decoration: none; font-weight: bold;">🎈 Citation</a> • -->
-    <a href="#leaderboard" style="text-decoration: none; font-weight: bold;">📊 Leaderboard</a>
-    <a href="#acknowledgement" style="text-decoration: none; font-weight: bold;">🌻 Acknowledgements</a>
-    <a href="https://x.com/yafuly/status/1925753754961236006" style="text-decoration: none; font-weight: bold;">🐦 Twitter</a>
+    <a href="#leaderboard" style="text-decoration: none; font-weight: bold;">• 📊 Leaderboard</a>
+    <a href="#acknowledgement" style="text-decoration: none; font-weight: bold;"> •🌻 Acknowledgements</a>
+    <a href="https://x.com/yafuly/status/1925753754961236006" style="text-decoration: none; font-weight: bold;">• 🐦 Twitter</a>
     
   </p>
 </div>
