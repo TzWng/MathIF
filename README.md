@@ -179,6 +179,17 @@ We currently support evaluation of newly added models on our platform. To be inc
 
 MathIF is inspired by prior work on [IFEval](https://huggingface.co/datasets/google/IFEval) and [ComplexBench](https://github.com/thu-coai/ComplexBench), and leverages [vLLM](https://github.com/vllm-project/vllm) for efficient inference.
 
+# 📖Citation
+
+```
+@article{fu2025scaling,
+  title={Scaling Reasoning, Losing Control: Evaluating Instruction Following in Large Reasoning Models},
+  author={Fu, Tingchen and Gu, Jiawei and Li, Yafu and Qu, Xiaoye and Cheng, Yu},
+  journal={arXiv preprint arXiv:2505.14810},
+  year={2025}
+}
+```
+
 # 📬Contact
 
 For questions, feedback, or collaboration inquiries, please contact:  
