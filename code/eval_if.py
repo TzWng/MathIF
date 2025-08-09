@@ -2,6 +2,7 @@ import argparse
 import os
 import sys
 import json
+from prime_math import compute_score
 
 from constraint_registry import INSTRUCTION_DICT
 
@@ -52,6 +53,8 @@ def test_instruction_following_strict(
 
 strict = []
 loose = []
+correct = []
+
 
 
 
@@ -96,7 +99,13 @@ for line1,line2 in zip(open(args.hypothesis_path).readlines(), open(args.data_pa
         strict.append(1)
         loose.append(1)
 
+    if compute_score(hypothesis, data['answer'])[0]:
+        correct.append(1)
+    else:
+        correct.append(0)
+
 
 
 print(sum(strict)/len(strict))
 print(sum(loose)/len(loose))
+print(sum(correct)/len(correct))
