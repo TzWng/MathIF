@@ -1,4 +1,4 @@
-model=Qwen/Qwen3-4B
+model=Qwen_Qwen3-4B
 for dataset in gsm8k math500 minerva olympiad aime
 do
     for constraint in single double triple 
