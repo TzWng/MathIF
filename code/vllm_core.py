@@ -63,9 +63,22 @@ print(prompt[0])
 print(">>>>>>>>>>>>>>>>>>>>>>>>")
 
 
+drive_output_dir = "/content/drive/MyDrive/SafeDPO/IFEval_outputs"
+os.makedirs(drive_output_dir, exist_ok=True)
 
-output_path = "output/{}_{}_t{}p{}max{}seed{}.jsonl".format(args.model_name_or_path.replace("/","_"), args.test_file.split('/')[-1].split('.')[0], args.temperature, args.top_p, args.max_token, args.seed)  
-os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+output_path = os.path.join(
+    drive_output_dir,
+    "{}_{}_t{}p{}max{}seed{}.jsonl".format(
+        args.model_name_or_path.replace("/", "_"),
+        Path(args.test_file).stem,
+        args.temperature,
+        args.top_p,
+        args.max_token,
+        args.seed
+    )
+)
+
 output_path = output_path.replace(".jsonl", "_noconstraint.jsonl") if args.no_constraint else output_path
 
 
