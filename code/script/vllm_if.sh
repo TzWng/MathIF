@@ -1,4 +1,4 @@
-for model  in deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+for model in model=tzwilliam0/dpo_Instruct_merged
 do
     for dataset in gsm8k math500 minerva olympiad aime
     do
