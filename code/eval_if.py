@@ -67,56 +67,45 @@ if os.path.isdir(args.hypothesis_path):
 else:
     hypothesis_files = [args.hypothesis_path]
 
-if not hypothesis_files:
-    print(f"❌ No hypothesis files found in {args.hypothesis_path}")
-    sys.exit(0)
 
-for hyp_file in hypothesis_files:
-    print(f"🔹 Evaluating {hyp_file} ...")
+for line1, line2 in zip(
+    open(os.path.join("/content/drive/MyDrive/SafeDPO/IFEval_outputs", args.hypothesis_path)).readlines(),
+    open(args.data_path).readlines()
+):
+    record = json.loads(line1)
+    # ✅ 自动兼容各种字段名
+    hypothesis = (
+        record.get("output")
+        or record.get("response")
+        or record.get("responses")
+        or record.get("text")
+    )
+    if isinstance(hypothesis, list):
+        hypothesis = hypothesis[0]
 
-    for line1, line2 in zip(open(hyp_file).readlines(), open(args.data_path).readlines()):
-        try:
-            hypothesis = json.loads(line1)["output"]
-        except:
-            hypothesis = json.loads(line1)["responses"]
-        if isinstance(hypothesis, list):
-            hypothesis = hypothesis[0]
-        has_end_think = '</think>' in hypothesis
-        has_start_think = '<think>' in hypothesis
+    # ✅ 跳过空行
+    if not line2.strip():
+        continue
 
-        think = hypothesis
-        if has_end_think:
-            think = think.split("</think>")[0]
-        if '<think>' in think:
-            think = think.split('<think>')[1]
+    data = json.loads(line2)
+    if not ("noconstraint" in args.hypothesis_path):
+        is_follow_list = test_instruction_following_strict(
+            data["constraint_name"],
+            hypothesis,
+            data["constraint_args"],
+            data["question"],
+        )
+        strict.append(all(is_follow_list))
+        loose.append(sum(is_follow_list) / len(is_follow_list))
+    else:
+        strict.append(1)
+        loose.append(1)
 
-        if '<think>' in hypothesis:
-            hypothesis = hypothesis.split('<think>')[1]
-        if '</think>' in hypothesis:
-            hypothesis = hypothesis.split('</think>')[1]
-        if '<answer>' in hypothesis:
-            hypothesis = hypothesis.split('<answer>')[1]
-        if '</answer>' in hypothesis:
-            hypothesis = hypothesis.split('</answer>')[0]
+    if compute_score(hypothesis, data["answer"])[0]:
+        correct.append(1)
+    else:
+        correct.append(0)
 
-        data = json.loads(line2)
-        if not ("noconstraint" in hyp_file):
-            is_follow_list = test_instruction_following_strict(
-                data["constraint_name"],
-                hypothesis,
-                data["constraint_args"],
-                data["question"],
-            )
-            strict.append(all(is_follow_list))
-            loose.append(sum(is_follow_list) / len(is_follow_list))
-        else:
-            strict.append(1)
-            loose.append(1)
-
-        if compute_score(hypothesis, data["answer"])[0]:
-            correct.append(1)
-        else:
-            correct.append(0)
 
 print("==== Evaluation Results ====")
 print("Strict follow:", sum(strict) / len(strict))
