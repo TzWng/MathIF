@@ -1,4 +1,4 @@
-model=deepseek-ai_DeepSeek-R1-Distill-Qwen-1.5B
+model=tzwilliam0/dpo_Instruct_merged
 for dataset in gsm8k math500 minerva olympiad aime
 do
     for constraint in single double triple 
