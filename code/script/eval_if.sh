@@ -6,7 +6,7 @@ do
         echo ${model}_${dataset}_${constraint}
         python3 -u code/eval_if.py \
             --data_path data/${dataset}_${constraint}.jsonl \
-            --hypothesis_path output/${model}_${dataset}_${constraint}.jsonl
+            --hypothesis_path "/content/drive/MyDrive/SafeDPO/IFEval_outputs"
 
         # echo ${model}_${dataset}_${constraint}_noconstraint
         # python3 -u code/eval_if.py \
