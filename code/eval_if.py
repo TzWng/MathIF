@@ -68,10 +68,7 @@ else:
     hypothesis_files = [args.hypothesis_path]
 
 
-for line1, line2 in zip(
-    open(os.path.join("/content/drive/MyDrive/SafeDPO/IFEval_outputs", args.hypothesis_path)).readlines(),
-    open(args.data_path).readlines()
-):
+for line1,line2 in zip(open(args.hypothesis_path).readlines(), open(args.data_path).readlines()):
     record = json.loads(line1)
     # ✅ 自动兼容各种字段名
     hypothesis = (
