@@ -19,6 +19,8 @@
 
 model=Qwen_Qwen3-4B
 model=tzwilliam0_dpo_Math_merged
+model=tzwilliam0_dpo_Instruct_merged
+
 
 strict_total=0
 loose_total=0
