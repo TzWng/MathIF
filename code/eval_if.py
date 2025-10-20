@@ -78,7 +78,7 @@ for hyp_file in hypothesis_files:
         try:
             hypothesis = json.loads(line1)["output"]
         except:
-            hypothesis = json.loads(line1)["response"]
+            hypothesis = json.loads(line1)["responses"]
         if isinstance(hypothesis, list):
             hypothesis = hypothesis[0]
         has_end_think = '</think>' in hypothesis
