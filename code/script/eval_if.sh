@@ -32,7 +32,8 @@ loose_total=0
 correct_total=0
 count=0
 
-for dataset in gsm8k math500 minerva olympiad aime
+# for dataset in gsm8k math500 minerva olympiad aime
+for dataset in gsm8k math500 minerva
 do
     for constraint in single double triple 
     do 
