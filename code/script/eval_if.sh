@@ -23,6 +23,7 @@ model=tzwilliam0_dpo_Instruct_merged
 model=Qwen_Qwen2.5-Math-1.5B
 model=Qwen_Qwen2.5-1.5B-Instruct
 model=Qwen_Qwen2.5-Math-1.5B-Instruct
+model=tzwilliam0_DPO_deepseek_Instruct_10k
 
 
 strict_total=0
