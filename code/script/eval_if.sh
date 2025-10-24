@@ -26,6 +26,7 @@ model=Qwen_Qwen2.5-Math-1.5B-Instruct
 # model=tzwilliam0_DPO_deepseek_Instruct
 # model=tzwilliam0_DPO_deepseek_Math
 model=tzwilliam0_DPO_Qwen_Math_Instruct
+model=lam_0.8
 
 strict_total=0
 loose_total=0
@@ -40,7 +41,7 @@ do
         echo "🔹 Running ${model}_${dataset}_${constraint}..."
         result=$(python3 -u code/eval_if.py \
             --data_path data/${dataset}_${constraint}.jsonl \
-            --hypothesis_path "/content/drive/MyDrive/SafeDPO/IFEval_outputs/${model}_${dataset}_${constraint}.jsonl")
+            --hypothesis_path "/content/drive/MyDrive/SafeDPO/IFEval_outputs/${dataset}_${constraint}_${model}.jsonl")
 
         echo "$result"
 
