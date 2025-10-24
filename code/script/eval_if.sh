@@ -41,7 +41,7 @@ do
         echo "🔹 Running ${model}_${dataset}_${constraint}..."
         result=$(python3 -u code/eval_if.py \
             --data_path data/${dataset}_${constraint}.jsonl \
-            --hypothesis_path "/content/drive/MyDrive/SafeDPO/IFEval_outputs/${model}_${dataset}_${constraint}.jsonl")
+            --hypothesis_path "/content/drive/MyDrive/SafeDPO/MathIF_outputs/${dataset}_${constraint}_${model}.jsonl")
 
         echo "$result"
 
