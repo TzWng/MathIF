@@ -59,10 +59,12 @@ correct = []
 
 
 for line1,line2 in zip(open(args.hypothesis_path).readlines(), open(args.data_path).readlines()):
-    try:
-        hypothesis = json.loads(line1)["output"]
-    except:
-        hypothesis = json.loads(line1)["responses"]
+    record = json.loads(line1)
+    hypothesis = record.get("output") or record.get("responses") or record.get("response")
+    # try:
+    #     hypothesis = json.loads(line1)["output"]
+    # except:
+    #     hypothesis = json.loads(line1)["responses"]
     if isinstance(hypothesis,list):
         hypothesis = hypothesis[0]
     has_end_think = '</think>' in hypothesis
