@@ -21,7 +21,7 @@ model=Qwen_Qwen3-4B
 model=tzwilliam0_dpo_Math_merged
 model=tzwilliam0_dpo_Instruct_merged
 model=Qwen_Qwen2.5-Math-1.5B
-model=Qwen_Qwen2.5-1.5B-Instruct
+# model=Qwen_Qwen2.5-1.5B-Instruct
 # model=Qwen_Qwen2.5-Math-1.5B-Instruct
 # model=lambda_1.60
 
