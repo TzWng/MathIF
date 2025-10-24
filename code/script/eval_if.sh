@@ -26,7 +26,7 @@ model=Qwen_Qwen2.5-Math-1.5B-Instruct
 # model=tzwilliam0_DPO_deepseek_Instruct
 # model=tzwilliam0_DPO_deepseek_Math
 model=tzwilliam0_DPO_Qwen_Math_Instruct
-model=lambda_1.20
+model=lambda_1.60
 
 strict_total=0
 loose_total=0
